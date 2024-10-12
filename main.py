@@ -1,13 +1,17 @@
 from turtle import Screen, Turtle
 
 
-turtle = Turtle()
 screen = Screen()
-turtle.color("white")
-turtle.penup()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("PONG")
+
+paddle = Turtle()
+paddle.shape("square")
+paddle.color("white")
+paddle.shapesize(stretch_wid=5, stretch_len=1)
+paddle.penup()
+paddle.goto(350, 0)
 
 
 screen.exitonclick()
